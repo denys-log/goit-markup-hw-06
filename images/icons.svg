@@ -1,5 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
+    <symbol id="icon-menu" viewBox="0 0 47 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4.364" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"/>
+    </symbol>
     <symbol id="icon-person" viewBox="0 0 32 32">
       <path d="M16 16c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm0 4c-5.34 0-16 2.68-16 8v2c0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2v-2c0-5.32-10.66-8-16-8z"/>
     </symbol>
