@@ -526,7 +526,6 @@ input {
   background-position: center center;
   text-align: center;
   padding: 112px 0;
-  max-width: 1440px;
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -552,6 +551,7 @@ input {
         rgba(46, 47, 66, 0.7)
       ),
       url('../images/studio-bg-tablet@1x.jpg');
+    max-width: 1440px;
   }
 }
 
@@ -589,12 +589,13 @@ input {
 .studio-title {
   color: var(--white-color);
   margin: 0 auto 72px;
-  line-height: 60px;
+  line-height: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .studio-title {
     margin: 0 auto 36px;
+    line-height: 60px;
   }
 }
 
@@ -885,18 +886,20 @@ input {
   .footer .container {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 108px;
-    padding-right: 108px;
     column-gap: 24px;
     align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .footer .container {
+    max-width: 584px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .footer .container {
     flex-wrap: nowrap;
-    padding-left: 15px;
-    padding-right: 15px;
     column-gap: 0;
     row-gap: 0;
   }
@@ -1147,7 +1150,8 @@ input {
 
 .modal {
   position: absolute;
-  width: 392px;
+  width: calc(100% - 36px);
+  max-width: 392px;
   min-height: 584px;
   background-color: #fff;
   top: 50%;
