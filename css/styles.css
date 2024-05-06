@@ -521,11 +521,6 @@ input {
 /* studio */
 .studio {
   background-color: var(--dark-color);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url('../images/people-office.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -533,11 +528,61 @@ input {
   padding: 112px 0;
   max-width: 1440px;
   margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/studio-bg-mob@1x.jpg');
+}
+
+@media (min-resolution: 192dpi) {
+  .studio {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/studio-bg-mob@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .studio {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/studio-bg-tablet@1x.jpg');
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .studio {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/studio-bg-tablet@2x.jpg');
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .studio {
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/studio-bg-desktop@1x.jpg');
+  }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .studio {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/studio-bg-desktop@2x.jpg');
   }
 }
 
@@ -1042,6 +1087,17 @@ input {
 @media screen and (min-width: 768px) {
   .portfolio-page-item-img {
     height: 300px;
+  }
+
+  .portfolio-page-item-img img {
+    width: 356px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .portfolio-page-item-img img {
+    width: 360px;
   }
 }
 
